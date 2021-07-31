@@ -21,7 +21,7 @@ class m210731_061740_links extends Migration
 
         $this->createTable($this->table_name, [
             'id' => $this->primaryKey(),
-            'alias' => $this->string(50)->notNull()->unique(),
+            'alias' => $this->string(25)->notNull()->unique(),
             'url_string' => $this->string(255)->notNull(),
         ], $tableOptions);
     }
