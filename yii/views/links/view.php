@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
@@ -32,6 +33,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'alias',
             'url_string:url',
+            [
+                'attribute' => 'URL Shorten',
+                'value' => function($model){
+                    return Html::a(Url::base(true).'/'.$model->alias, Url::base(true).'/'.$model->alias, ['target' => '_blank']);
+                },
+                'format' => 'raw'
+            ],
         ],
     ]) ?>
 
