@@ -2,15 +2,14 @@
 
 namespace app\controllers;
 
-use app\models\gii\Links;
-use yii\helpers\Url;
+use app\models\LinksExt;
 use yii\web\Controller;
 
 class RedirectController extends Controller
 {
     public function actionIndex($alias)
     {
-        $link = Links::findOne(['alias' => $alias]);
+        $link = LinksExt::findOne(['alias' => $alias]);
 
         if ($link == null) {
             return "Sorry, alias $alias not found";
