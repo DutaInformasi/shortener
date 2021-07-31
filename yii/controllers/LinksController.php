@@ -65,6 +65,7 @@ class LinksController extends Controller
     public function actionCreate()
     {
         $model = new LinksExt();
+        $model->scenario = LinksExt::SCENARIO_CREATE_ALIAS;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -85,6 +86,7 @@ class LinksController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $model->scenario = LinksExt::SCENARIO_UPDATE_ALIAS;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
