@@ -1,0 +1,113 @@
+body {
+	position: relative;
+	margin-bottom: 0;
+	background: #f2f2f2;
+}
+
+.bs-docs-masthead {
+	position:relative;
+	padding:30px 15px;
+	color:#cdbfe3;
+	text-align:center;
+	text-shadow:0 1px 0 rgba(0,0,0,.1);
+	background-color:#6f5499;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#563d7c),to(#6f5499));
+	background-image:-webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+	background-image:-o-linear-gradient(top,#563d7c 0,#6f5499 100%);
+	background-image:linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+	background-repeat:repeat-x;
+}
+/*
+.navbar {
+	background-color: #27a2dc;
+	height: 70px;
+	color: #000;
+}*/
+
+.jumbotron {
+	background-color: #27a2dc;
+	padding-top: 90px;
+	color: #fff;
+	width: auto;
+}
+
+.short {
+	/*border:1px solid #eee;
+	border-left: 1px solid;
+	border-bottom: 1px solid #eee;
+	border-radius:3px;
+	width: 800px;*/
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.short .details {
+	margin-top: 20px;
+	border:1px solid #eee;
+	border-left: 1px solid;
+	border-bottom: 1px solid #eee;
+	border-radius:3px;
+	background-color: #fff;
+}
+
+.preloader {
+	padding: 50px 0;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+}
+
+.stat {
+	/*border:1px solid #eee;
+	border-left: 1px solid;
+	border-bottom: 1px solid #eee;
+	border-radius:3px;
+	width: 800px;*/
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.detil {
+	border:1px solid #ff0000;
+	/*border-left: 1px solid;*/
+	/*border-bottom: 1px solid #eee;*/
+	border-radius:3px;
+	padding: 10px;
+}
+
+.short-results {
+	padding: 0 10px 0 20px;
+}
+
+.short-results {
+	opacity: 0;
+	padding: 0 130px;
+}
+
+.short-container {
+	box-shadow: 0px 1px 1px #CCC;
+	border: 1px solid #B1B1B1;
+	background: #fff;
+	color: #6B6B6B;
+	border-radius: 3px;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 3px;
+	box-sizing: border-box;
+}
+.short-container input {
+	background-color: #F5F5F5;
+	border: 1px solid #EBEBEB;
+	padding: 10px;
+	margin-bottom: 15px;
+	width: 100%;
+	font-family: 'Segoe UI', Arial, Tahoma, Verdana, sans-serif;
+	font-weight: bold;
+	color: #666;
+	box-sizing: border-box;
+}
+.short-container input:hover {
+	color: #000;
+}
+	
