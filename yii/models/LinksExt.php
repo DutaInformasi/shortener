@@ -24,8 +24,7 @@ class LinksExt extends Links
         }
 
         if ($insert) {
-            $random_string = Yii::$app->security->generateRandomString();
-            $this->alias = substr($random_string, 1, Yii::$app->params['link_length']);
+            $this->alias = Yii::$app->security->generateRandomString(Yii::$app->params['link_length']);
         }
 
         return true;
