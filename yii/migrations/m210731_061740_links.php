@@ -23,8 +23,6 @@ class m210731_061740_links extends Migration
             'id' => $this->primaryKey(),
             'alias' => $this->string(50)->notNull()->unique(),
             'url_string' => $this->string(255)->notNull(),
-            'created_at' => $this->integer()->notNull(),
-            'updated_at' => $this->integer()->notNull(),
         ], $tableOptions);
     }
 
