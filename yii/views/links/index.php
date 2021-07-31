@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\LinksExtSearch */
@@ -29,6 +30,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'alias',
             'url_string:url',
+            [
+                'header' => 'URL Shorten',
+                'value' => function($model){
+                    return Html::a(Url::base(true).'/'.$model->alias, Url::base(true).'/'.$model->alias, ['target' => '_blank']);
+                },
+                'format' => 'raw'
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

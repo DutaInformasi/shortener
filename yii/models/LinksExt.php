@@ -11,7 +11,7 @@ class LinksExt extends Links
     {
         return [
             [['url_string'], 'required'],
-            [['alias'],'safe'],
+            [['alias'], 'safe'],
             [['alias'], 'string', 'max' => 25],
             [['url_string'], 'string', 'max' => 255],
         ];
@@ -23,8 +23,10 @@ class LinksExt extends Links
             return false;
         }
 
-        $random_string = Yii::$app->security->generateRandomString();
-        $this->alias = substr($random_string,1,Yii::$app->params['link_length']);
+        if ($insert) {
+            $random_string = Yii::$app->security->generateRandomString();
+            $this->alias = substr($random_string, 1, Yii::$app->params['link_length']);
+        }
 
         return true;
     }
